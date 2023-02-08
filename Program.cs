@@ -12,7 +12,7 @@ namespace MyApplication
 
         static void Main(string[] args)
         {
-            Prop(args, 0);
+            Prop(args, 0,12);
         }
 
 
@@ -43,13 +43,32 @@ namespace MyApplication
                                 static string GeneratePassword(int length)
                                 {
                                     const string validChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*";
+                                    const string specialChars = "!@#$%^&*";
                                     StringBuilder res = new StringBuilder();
                                     Random rnd = new Random();
-                                    while (0 < length--)
+
+                                    
+                                    res.Append(specialChars[rnd.Next(specialChars.Length)]);
+                                    res.Append(validChars[rnd.Next(validChars.Length - 10) + 10]);
+
+                                    while (res.Length < length)
                                     {
                                         res.Append(validChars[rnd.Next(validChars.Length)]);
                                     }
-                                    return res.ToString();
+
+                                    
+                                    char[] password = res.ToString().ToCharArray();
+                                    for (int i = password.Length - 1; i > 0; i--)
+                                    {
+                                        int swapIndex = rnd.Next(i + 1);
+                                        if (swapIndex != i)
+                                        {
+                                            char temp = password[i];
+                                            password[i] = password[swapIndex];
+                                            password[swapIndex] = temp;
+                                        }
+                                    }
+                                    return new string(password);
                                 }
                                 File.AppendAllText("info.txt", $"{website}|{username}|{GeneratePassword(12)}");
                                     Console.WriteLine(File.ReadAllText("info.txt"));
@@ -115,7 +134,7 @@ namespace MyApplication
                             Console.WriteLine("Error: " + ex.Message);
                         }
                     }
-                    Prop(args, accepts);
+                    Prop(args, accepts,12);
 
 
 
