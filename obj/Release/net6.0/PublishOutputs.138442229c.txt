@@ -1,0 +1,5 @@
+C:\Users\Shane\source\repos\passwordmanagerr\passwordmanagerr\bin\Release\net6.0\publish\passwordmanagerr.exe
+C:\Users\Shane\source\repos\passwordmanagerr\passwordmanagerr\bin\Release\net6.0\publish\passwordmanagerr.dll
+C:\Users\Shane\source\repos\passwordmanagerr\passwordmanagerr\bin\Release\net6.0\publish\passwordmanagerr.deps.json
+C:\Users\Shane\source\repos\passwordmanagerr\passwordmanagerr\bin\Release\net6.0\publish\passwordmanagerr.runtimeconfig.json
+C:\Users\Shane\source\repos\passwordmanagerr\passwordmanagerr\bin\Release\net6.0\publish\passwordmanagerr.pdb

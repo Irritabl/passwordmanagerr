@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "6fXpMtRAfpgvNiEH5WWWS1wQLMzLCN7iAEqrZFD+ed5LcFHOeYczEC8yQvZgTWp/nMy4aHENnaLBpc7UWo4Qmg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Shane\\source\\repos\\passwordmanagerr\\passwordmanagerr\\passwordmanagerr.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Shane\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\6.0.12\\microsoft.netcore.app.runtime.win-x86.6.0.12.nupkg.sha512",
+    "C:\\Users\\Shane\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\6.0.12\\microsoft.windowsdesktop.app.runtime.win-x86.6.0.12.nupkg.sha512",
+    "C:\\Users\\Shane\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.12\\microsoft.aspnetcore.app.runtime.win-x86.6.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}
